@@ -87,5 +87,15 @@ Thumbs.db
 # Railway
 .railway/
 
+# Large files and archives
+*.zip
+*.rar
+*.tar.gz
+*.7z
+
+# MongoDB dumps
+*.dump
+mongodb/
+
 # Vercel
 .vercel/
