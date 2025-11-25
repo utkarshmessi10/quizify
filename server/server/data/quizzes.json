@@ -1,0 +1,75 @@
+[
+  {
+    "id": "quiz001",
+    "title": "JavaScript Fundamentals",
+    "description": "Test your knowledge of JavaScript basics",
+    "questions": [
+      {
+        "questionText": "What is the correct way to declare a variable in JavaScript?",
+        "options": [
+          {
+            "text": "var myVar = 5;"
+          },
+          {
+            "text": "variable myVar = 5;"
+          },
+          {
+            "text": "v myVar = 5;"
+          },
+          {
+            "text": "declare myVar = 5;"
+          }
+        ],
+        "correctOptionIndex": 0
+      },
+      {
+        "questionText": "Which method is used to add an element to the end of an array?",
+        "options": [
+          {
+            "text": "append()"
+          },
+          {
+            "text": "push()"
+          },
+          {
+            "text": "add()"
+          },
+          {
+            "text": "insert()"
+          }
+        ],
+        "correctOptionIndex": 1
+      },
+      {
+        "questionText": "What does 'DOM' stand for?",
+        "options": [
+          {
+            "text": "Document Object Model"
+          },
+          {
+            "text": "Data Object Management"
+          },
+          {
+            "text": "Dynamic Object Method"
+          },
+          {
+            "text": "Document Oriented Model"
+          }
+        ],
+        "correctOptionIndex": 0
+      }
+    ],
+    "duration": 15,
+    "difficulty": "easy",
+    "category": "Programming",
+    "tags": [
+      "javascript",
+      "programming",
+      "web development"
+    ],
+    "isActive": true,
+    "createdBy": "admin001",
+    "createdAt": "2025-11-20T07:00:00.000Z",
+    "updatedAt": "2025-11-21T20:20:46.176Z"
+  }
+]

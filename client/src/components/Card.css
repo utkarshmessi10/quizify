@@ -1,0 +1,51 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-hover {
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Variants */
+.card-default {
+  border: 1px solid #e5e7eb;
+}
+
+.card-elevated {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-bordered {
+  border: 2px solid #e5e7eb;
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Padding variants */
+.card-padding-none {
+  padding: 0;
+}
+
+.card-padding-sm {
+  padding: 16px;
+}
+
+.card-padding-default {
+  padding: 24px;
+}
+
+.card-padding-lg {
+  padding: 32px;
+}

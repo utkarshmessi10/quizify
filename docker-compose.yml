@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  quizify:
+    build: .
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - JWT_SECRET=your-super-secret-jwt-key
+      - JWT_EXPIRES_IN=7d
+    volumes:
+      - ./server/server/data:/app/server/data
+    restart: unless-stopped

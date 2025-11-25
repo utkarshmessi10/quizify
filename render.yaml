@@ -1,0 +1,12 @@
+# Render.com Build Configuration
+build: |
+  cd server/server
+  npm install
+  cd ../../client
+  npm install
+  npm run build
+  cp -r build ../server/server/public
+
+start: |
+  cd server/server
+  npm start

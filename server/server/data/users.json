@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1763623560322",
+    "name": "utkarsh",
+    "email": "fanaticvrun09@gmail.com",
+    "password": "$2b$10$zLne/TmElPlUyE18Pnzj4ukoHS4mSjM8kW/1WY/MDaw9LfxXDhhkm",
+    "role": "admin",
+    "createdAt": "2025-11-20T07:26:00.322Z",
+    "updatedAt": "2025-11-20T07:26:00.576Z"
+  },
+  {
+    "id": "admin001",
+    "name": "Admin User",
+    "email": "admin@quizify.com",
+    "password": "$2b$10$zLne/TmElPlUyE18Pnzj4ukoHS4mSjM8kW/1WY/MDaw9LfxXDhhkm",
+    "role": "admin",
+    "createdAt": "2025-11-20T07:00:00.000Z",
+    "updatedAt": "2025-11-20T07:00:00.000Z"
+  },
+  {
+    "id": "1763756504456",
+    "name": "utkarsh",
+    "email": "admin@gmail.com",
+    "password": "$2b$10$nzt2iCzRVMUl1uy45G7sauJW.QhJwwafeoQyzS9Pvam2jhpptY46u",
+    "role": "user",
+    "createdAt": "2025-11-21T20:21:44.456Z",
+    "updatedAt": "2025-11-21T20:21:44.663Z"
+  }
+]
