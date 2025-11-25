@@ -15,12 +15,18 @@
       "dest": "server/server/app.js"
     },
     {
-      "src": "/static/(.*)",
-      "dest": "server/server/public/static/$1"
+      "src": "/static/css/(.*)",
+      "headers": { "content-type": "text/css" },
+      "dest": "server/server/public/static/css/$1"
     },
     {
-      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg))",
-      "dest": "server/server/public/$1"
+      "src": "/static/js/(.*)",
+      "headers": { "content-type": "application/javascript" },
+      "dest": "server/server/public/static/js/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "server/server/public/favicon.ico"
     },
     {
       "src": "/(.*)",

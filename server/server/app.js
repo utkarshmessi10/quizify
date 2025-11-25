@@ -41,14 +41,25 @@ app.use('/api/quizzes', quizRoutes);
 // Serve static files from React build in production
 if (process.env.NODE_ENV === 'production') {
   const publicPath = path.join(__dirname, 'public');
+  
+  // Serve static assets with correct MIME types
+  app.use('/static', express.static(path.join(publicPath, 'static'), {
+    setHeaders: (res, path) => {
+      if (path.endsWith('.css')) {
+        res.setHeader('Content-Type', 'text/css');
+      } else if (path.endsWith('.js')) {
+        res.setHeader('Content-Type', 'application/javascript');
+      }
+    }
+  }));
+  
+  // Serve other public files
   app.use(express.static(publicPath));
   
   // Handle React Router - send all non-API requests to index.html
   app.get('*', (req, res) => {
-    // Don't serve index.html for API routes or static assets
-    if (req.path.startsWith('/api/') || 
-        req.path.includes('.') ||
-        req.path.startsWith('/static/')) {
+    // Don't serve index.html for API routes
+    if (req.path.startsWith('/api/')) {
       return res.status(404).json({ message: 'Not found' });
     }
     res.sendFile(path.join(publicPath, 'index.html'));
