@@ -5,7 +5,7 @@
       "src": "server/server/app.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["server/server/data/**"]
+        "includeFiles": ["server/server/data/**", "server/server/public/**"]
       }
     }
   ],
@@ -15,8 +15,16 @@
       "dest": "server/server/app.js"
     },
     {
-      "src": "/(.*)",
+      "src": "/static/(.*)",
+      "dest": "server/server/public/static/$1"
+    },
+    {
+      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg))",
       "dest": "server/server/public/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "server/server/app.js"
     }
   ],
   "env": {
