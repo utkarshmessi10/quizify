@@ -99,3 +99,4 @@ mongodb/
 
 # Vercel
 .vercel/
+.vercel

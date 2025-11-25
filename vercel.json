@@ -3,13 +3,9 @@
   "builds": [
     {
       "src": "server/server/app.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "client/package.json",
-      "use": "@vercel/static-build",
+      "use": "@vercel/node",
       "config": {
-        "distDir": "build"
+        "includeFiles": ["server/server/data/**"]
       }
     }
   ],
@@ -20,12 +16,10 @@
     },
     {
       "src": "/(.*)",
-      "dest": "client/build/$1"
+      "dest": "server/server/public/$1"
     }
   ],
   "env": {
-    "JWT_SECRET": "@jwt-secret",
-    "JWT_EXPIRES_IN": "7d",
     "NODE_ENV": "production"
   }
 }
