@@ -157,11 +157,6 @@ The application uses default configurations but can be customized:
 - **JWT Secret**: Configured in `server/server/config.js`
 - **API Base URL**: Configurable in frontend via `REACT_APP_API_URL`
 
-### Default Admin Account
-A default admin account is available for testing:
-- **Email**: `admin@quizify.com`
-- **Password**: `admin123`
-- **Role**: Administrator
 
 ## 📊 Data Storage
 
